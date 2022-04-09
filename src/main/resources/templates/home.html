@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>4orum</title>
+    <link rel="stylesheet" href="/css/login.css" >
+    <link rel="stylesheet" href="/css/board.css" >
+</head>
+<body>
+<header th:replace="../templates/fragments/common :: header">-- thymeleaf header will be inserted here. --</header>
+<section>
+    <div class="container">
+        <div>
+            <p>회원 기능</p>
+            <p>
+                <a href="/members/new">회원 가입</a>
+                <a href="/members">회원 목록</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div id="board_header">
+        <h3>
+            <a href="/notice">
+                <p th:text="${data}" ></p>
+            </a>
+        </h3>
+    </div>
+    <div id="bd_list">
+        <table>
+            <thead>
+            <tr>
+                <th>번호</th>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>작성날짜</th>
+                <th>조회</th>
+            </tr>
+            </thead>
+
+            <!--/* 게시글 리스트 */-->
+            <tbody id="list">
+
+            </tbody>
+
+        </table>
+        <a href="/newPost" class="btn" id="btnNewPost">Post</a>
+    </div>
+</section>
+<footer th:replace="fragments/common :: footer">-- thymeleaf footer will be inserted here. --</footer>
+</body>
+</html>

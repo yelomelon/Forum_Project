@@ -1,0 +1,20 @@
+form {
+    width: 70%;
+}
+
+#title, #content {
+    width: 100%;
+}
+
+#divBtns {
+    display: flex;
+}
+
+.btn {
+    border: none;
+}
+
+#btnSave {
+    background-color: #fbe7b2;
+    margin-left: auto;
+}

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Post</title>
+    <link rel="stylesheet" href="/css/new_post.css" >
+</head>
+<body>
+<header th:replace="fragments/common :: header">-- thymeleaf header will be inserted here. --</header>
+<article th:replace="fragments/newPostForm :: newPost">-- thymeleaf form will be inserted here. --</article>
+
+</body>
+</html>

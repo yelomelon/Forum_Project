@@ -1,0 +1,24 @@
+table {
+    width: 100%;
+    border-top: solid 1px black;
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: solid 1px black;
+    padding: 10px;
+}
+
+/*td {
+    border-bottom: solid 1px black;
+    padding: 10px;
+}*/
+
+.btn {
+    border: none;
+}
+
+#btnNewPost {
+    background-color: #fbe7b2;
+    margin-left: auto;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="html-head">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+<header th:fragment="header">
+  <link rel="stylesheet" th:href="@{/css/fragment-header.css}" >
+
+  <div class="home">
+    <a href="/">4orum</a>
+  </div>
+
+  <div class="nav">
+    <a href="/board">게시판</a>
+  </div>
+
+  <hr>
+</header>
+
+<footer th:fragment="footer">
+
+</footer>
+</body>

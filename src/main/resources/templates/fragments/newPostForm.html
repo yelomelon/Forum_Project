@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/board.css" >
+    <style>
+    form {
+        width: 70%;
+    }
+
+    #title, #content {
+        width: 100%;
+    }
+
+    #divBtns {
+        display: flex;
+    }
+
+    .btn {
+        border: none;
+    }
+
+    #btnSave {
+        background-color: #fbe7b2;
+        margin-left: auto;
+    }
+    </style>
+</head>
+<body>
+
+<article th:fragment="newPost">
+    <form>
+        <p>Add New Post</p><br>
+
+        <input type="text" name="title" id="title" placeholder="Enter title here"><br>
+
+        <textarea type="form-control" rows="10" name="content" id="content"></textarea><br>
+
+        <div id="divBtns">
+            <button type="button" class="btn" id="btnList">목록</button>
+            <button type="button" class="btn" id="btnSave">저장</button>
+        </div>
+    </form>
+</article>
+
+</body>
+</html>
